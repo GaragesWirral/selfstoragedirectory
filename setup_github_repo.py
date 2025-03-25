@@ -63,8 +63,8 @@ Thumbs.db
     # Add remote repository
     subprocess.run(['git', 'remote', 'add', 'origin', 'https://github.com/GaragesWirral/selfstoragedirectory.git'], check=True)
     
-    # Push to main branch
-    subprocess.run(['git', 'push', '-u', 'origin', 'main'], check=True)
+    # Push to master branch
+    subprocess.run(['git', 'push', '-u', 'origin', 'master'], check=True)
     
     print("Repository setup and code push completed successfully!")
 
