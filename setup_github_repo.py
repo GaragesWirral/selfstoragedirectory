@@ -51,8 +51,14 @@ Thumbs.db
     # Add all files
     subprocess.run(['git', 'add', '.'], check=True)
     
-    # Create initial commit
-    subprocess.run(['git', 'commit', '-m', 'Initial commit: Self Storage Directory Website'], check=True)
+    # Commit changes
+    subprocess.run(['git', 'commit', '-m', 'Initial commit'], check=True)
+    
+    # Remove existing remote if it exists
+    try:
+        subprocess.run(['git', 'remote', 'remove', 'origin'], check=True)
+    except subprocess.CalledProcessError:
+        pass  # Remote doesn't exist, which is fine
     
     # Add remote repository
     subprocess.run(['git', 'remote', 'add', 'origin', 'https://github.com/GaragesWirral/selfstoragedirectory.git'], check=True)
@@ -60,7 +66,7 @@ Thumbs.db
     # Push to main branch
     subprocess.run(['git', 'push', '-u', 'origin', 'main'], check=True)
     
-    print("Repository setup and code pushed to GitHub successfully!")
+    print("Repository setup and code push completed successfully!")
 
 if __name__ == "__main__":
     setup_github_repo() 
