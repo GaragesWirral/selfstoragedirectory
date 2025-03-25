@@ -16,6 +16,7 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -24,32 +25,12 @@ var/
 venv/
 ENV/
 
-# IDE files
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Excel files (optional, uncomment if you don't want to include the data file)
-# *.xlsx
-
-# Logs
-*.log
-
-# OS specific files
+# OS
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Editor-specific files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Temporary files
-*.tmp
-*.bak
-
-# Node modules if you use npm
-node_modules/ 

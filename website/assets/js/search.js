@@ -1,4 +1,3 @@
-
 // This function will search for regions and redirect if found
 function searchLocations() {
     const searchTerm = (new URLSearchParams(window.location.search)).get('search');

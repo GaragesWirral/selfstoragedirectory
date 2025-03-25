@@ -1,50 +1,52 @@
-# Self Storage Finder
+# Self Storage Directory Website
 
-A comprehensive directory website for self-storage facilities in the UK. This project provides a user-friendly interface for finding storage facilities by region and city.
+A comprehensive directory of self-storage facilities across the UK. This website helps users find and compare storage facilities in their area.
 
 ## Features
 
-- Browse storage facilities by region and city
-- Search functionality to quickly find specific locations
-- Detailed information about each storage facility
+- Search functionality for finding storage facilities by location
+- Detailed listings of storage facilities by region and city
+- Storage calculator to estimate space requirements
+- Contact form for inquiries and facility listing requests
 - Mobile-responsive design
-- FAQ section with commonly asked questions about self storage
-- Comprehensive navigation system
-- Legal pages including Privacy Policy, Terms and Conditions, and Membership Terms
 
-## Technology
+## Project Structure
 
-- Built with HTML, CSS, and JavaScript
-- No external libraries or frameworks required
-- Simple and lightweight design for fast loading
+```
+self-storage-facilities/
+├── website/                 # Main website files
+│   ├── assets/             # CSS, JavaScript, and images
+│   ├── calculator/         # Storage calculator page
+│   ├── contact/            # Contact page
+│   ├── selfstorageregions/ # Region pages
+│   └── index.html          # Homepage
+├── scripts/                # Python scripts for site generation
+└── data/                   # Data files for site generation
+```
 
-## Structure
+## Setup
 
-- `index.html` - Homepage with search functionality and featured regions
-- `regions.html` - Listing of all regions with search capability
-- Region pages - Individual pages for each region listing all cities
-- City pages - Individual pages for each city listing all storage facilities
-- `assets/` - Directory containing CSS and JavaScript files
-- `assets/css/style.css` - Main stylesheet
-- `assets/js/search.js` - JavaScript for search functionality
+1. Clone the repository:
+```bash
+git clone https://github.com/GaragesWirral/selfstoragedirectory.git
+```
 
-## Usage
+2. Navigate to the project directory:
+```bash
+cd selfstoragedirectory
+```
 
-To use this website locally:
+3. Run the site generation scripts:
+```bash
+python scripts/generate_site.py
+```
 
-1. Clone the repository
-2. Open `website/index.html` in your web browser
-3. Navigate through the regions and cities to find storage facilities
+## Contact
 
-## Development
-
-To modify or extend the website:
-
-1. Update the `self storage facilities uk.xlsx` file with new data
-2. Run `python create_storage_directory.py` to regenerate the website
-3. Test the website locally
-4. Deploy the `website/` directory to your web server
+For any inquiries or to list your storage facility:
+- Email: support@storagefinder.uk
+- Phone: 07519667044
 
 ## License
 
-This project is available for educational purposes. 
+© 2025 Storage Finder. All rights reserved. 
