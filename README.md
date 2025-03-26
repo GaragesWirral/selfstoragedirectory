@@ -1,6 +1,6 @@
 # Self Storage Directory Website
 
-A comprehensive directory of self-storage facilities across the UK. This website helps users find and compare storage facilities in their area.
+A comprehensive directory of self-storage facilities across the UK. This website helps users find and compare storage facilities in their area. If you are looking for [self storage near you](https://www.storagefinder.uk/), please take a look at the website that I have created.
 
 ## Features
 
